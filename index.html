@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIZ</title>
+    <title>WIZ - World of IT Zealots</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <h1>We Are Zealots</h1>
+    <header>
+        <div class="container">
+            <h1>WIZ - World of IT Zealots</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to WIZ</h2>
+            <p>Our mission is to increase computer literacy in Nepal.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>WIZ (World of IT Zealots) is a club dedicated to improving computer literacy among people in Nepal. We offer workshops, seminars, and hands-on training sessions to help individuals of all ages and backgrounds gain essential IT skills.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Details about project 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Details about project 2.</p>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>Details about project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="containers">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WIZ - World of IT Zealots. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
