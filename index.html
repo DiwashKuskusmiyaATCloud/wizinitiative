@@ -1,90 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIZ - World of IT Zealots</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>WIZ - World of IT Zealots</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiz</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- navigation section  -->
 
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to WIZ</h2>
-            <p>Our mission is to increase computer literacy in Nepal.</p>
-            <a href="#about" class="btn">Learn More</a>
+    <nav class="pdng-1 flex flex-betwn align-center center">
+      <div class="navbrand">
+        <h1 class="slg primary">WIZ</h1>
+      </div>
+
+      <div class="navlist">
+        <ul>
+          <li><a href="#" class="anchor sss">Home</a></li>
+          <li><a href="#aboutus" class="anchor sss">About</a></li>
+          <li><a href="#" class="anchor sss">ImpactedSchools</a></li>
+          <li><a href="#" class="anchor sss">Proposal</a></li>
+          <li><a href="#Contact" class="anchor sss">Contact</a></li>
+          <button class="btn-primary" id="joinusbtn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNkngyFkrehtMgwFuTi_-nwxx6ju3LU35CpU9Axkdo4bK0LQ/viewform" id="ss" class="anchor sss secondary">JoinUs</a></button>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+    </nav>
+
+    <div class="socialmedia flex flex-center flex-gap1">
+      <a href="https://www.facebook.com/wizinitiative" target="_blank">
+        <i class="fa-brands fa-facebook ss anchor secondary"></i>
+      </a>
+      <a href="https://www.instagram.com/wiz.initiative/" target="_blank">
+        <i class="fa-brands fa-square-instagram ss anchor secondary"></i>
+      </a>
+    </div>
+
+    <!-- navigation section end -->
+
+    <!-- landing view  -->
+    <section class="landingSection pdng-1 flex flex-dir-wr flex-betwn">
+      <div id="imageholder">
+        <img src="assets/heroimage.svg" alt="hero image" id="heroimage"/>
+      </div>
+
+      <div class="herosection flex flex-dir-col flex-gap1 flex-center">
+        <h1 class="slg b-bold">Embrace The Future With WIZ</h1>
+
+        <p class="sss b-lighter grey">
+          Our workshops and coding classes are crafted to spark curiosity and
+          build essential digital skills. Together, let’s make a difference in
+          the world of IT and shape a tech-savvy Nepal!
+        </p>
+
+        <div id = "joinusnow">
+            <button class="btn-primary"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNkngyFkrehtMgwFuTi_-nwxx6ju3LU35CpU9Axkdo4bK0LQ/viewform" class="anchor secondary">Join Us Now</a></button>
         </div>
+        
+      </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>WIZ (World of IT Zealots) is a club dedicated to improving computer literacy among people in Nepal. We offer workshops, seminars, and hands-on training sessions to help individuals of all ages and backgrounds gain essential IT skills.</p>
-        </div>
-    </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <p>Details about project 1.</p>
-                </div>
-                <div class="card">
-                    <h3>Project 2</h3>
-                    <p>Details about project 2.</p>
-                </div>
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <p>Details about project 3.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="wavy">
+      <img src="assets/wavy.png" alt="hero image">
+    </div> 
 
-    <section id="contact">
-        <div class="containers">
-            <h2>Contact Us</h2>
-            <form action="/submit-form" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+<!-- about us -->
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 WIZ - World of IT Zealots. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+
+<section id="aboutus" class="flex flex-center pdng-1">
+<!-- <div id="aboutusimage">
+  <img src="assets/aboutus.png" alt="">
+</div>
+
+<div class="pdng-1 flex flex-dir-col align-center flex-center flex-gap1" id="aboutustextSection">
+  <h1 class="slg">WHO ARE WE ?</h1>
+  <p id="aboutustext">WIZ (World of IT Zealots) is dedicated to advancing computer literacy in Nepal. Our mission is to ignite a passion for technology and empower students with essential digital skills. Through hands-on workshops, coding classes, and inspiring projects, 
+we make IT accessible and exciting for everyone.
+Join us to explore the dynamic world of technology and contribute to building a digitally literate Nepal. Together, we can make a difference through IT!
+</p>
+</div> -->
+</section>
+
+
+     <footer class="flex flex-spca align-center" id="Contact">
+      <div id="icon-holder" class="">
+        <img src="assets/logo.png" alt="wiz initiative logo" class="icon">
+      </div>
+
+        <p class="sss secondary sss b-light">&copy; 2024 WIZ Initiative. All rights reserved.</p>
+
+          <div class="flex flex-center flex-gap1">
+            <p class="secondary ss b-bold">Contact Us Here</p>
+      <a href="https://www.facebook.com/wizinitiative" target="_blank">
+        <i class="fa-brands fa-facebook ss anchor secondary"></i>
+      </a>
+      <a href="https://www.instagram.com/wiz.initiative/" target="_blank">
+        <i class="fa-brands fa-square-instagram ss anchor secondary"></i>
+      </a>
+    </div> 
+
     </footer>
 
+
+    <script
+      src="https://kit.fontawesome.com/dce8424538.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
