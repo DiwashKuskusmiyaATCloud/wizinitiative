@@ -1,0 +1,16 @@
+<!-- <section id="aboutus" class="flex flex-center pdng-1"> -->
+<!-- <div id="aboutusimage">
+  <img src="assets/aboutus.png" alt="">
+</div>
+
+<div class="pdng-1 flex flex-dir-col align-center flex-center flex-gap1" id="aboutustextSection">
+  <h1 class="slg">WHO ARE WE ?</h1>
+  <p id="aboutustext">WIZ (World of IT Zealots) is dedicated to advancing computer literacy in Nepal. Our mission is to ignite a passion for technology and empower students with essential digital skills. Through hands-on workshops, coding classes, and inspiring projects, 
+we make IT accessible and exciting for everyone.
+Join us to explore the dynamic world of technology and contribute to building a digitally literate Nepal. Together, we can make a difference through IT!
+</p>
+</div> -->
+<!-- </section> -->
+
+
+# THIS WAS JUST ABOVE FOOTER
