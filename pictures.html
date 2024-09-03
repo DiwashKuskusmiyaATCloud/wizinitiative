@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiz</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .folder {
+            margin-bottom: 20px;
+        }
+        .folder-title {
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- navigation section  -->
+
+    <nav class="pdng-1 flex flex-betwn align-center center">
+      <div class="navbrand">
+        <!-- <h1 class="slg primary">WIZ</h1> -->
+        <img src="assets/logo.png">
+      </div>
+
+      <div class="navlist">
+        <ul>
+          <li><a href="index.html#" class="anchor sss">Home</a></li>
+          <li><a href="index.html#aboutus" class="anchor sss">About</a></li>
+          <li><a href="index.html#projects" class="anchor sss">Projects</a></li>
+          <li><a href="#" class="anchor sss">Gallery</a></li>
+
+          <li><a href="#" class="anchor sss">Proposal</a></li>
+
+          <button class="btn-primary" id="joinusbtn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNkngyFkrehtMgwFuTi_-nwxx6ju3LU35CpU9Axkdo4bK0LQ/viewform" id="ss" class="anchor sss secondary">Join Us</a></button>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+    </nav>
+
+    <div class="socialmedia flex flex-center flex-gap1">
+      <a href="https://www.facebook.com/wizinitiative" target="_blank">
+        <i class="fa-brands fa-facebook ss anchor secondary"></i>
+      </a>
+      <a href="https://www.instagram.com/wiz.initiative/" target="_blank">
+        <i class="fa-brands fa-square-instagram ss anchor secondary"></i>
+      </a>
+    </div>
+
+    <!-- navigation section end -->
+
+
+
+
+
+    <div class="folder">
+        <div class="folder-title" onclick="toggleImages(this)">Supreme School</div>
+        <div class="images">
+            <img src="assets/aboutus.png" alt="Image 1">
+            <img src="assets/aboutus2.jpg" alt="Image 2">
+            <img src="assets/aboutus2.png" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <div class="folder">
+        <div class="folder-title" onclick="toggleImages(this)">Other</div>
+        <div class="images">
+            <img src="assets/aboutus.png" alt="Image 1">
+            <img src="assets/aboutus2.jpg" alt="Image 2">
+            <img src="assets/aboutus2.png" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <script>
+        function toggleImages(element) {
+            const imagesDiv = element.nextElementSibling;
+            if (imagesDiv.classList.contains('hidden')) {
+                imagesDiv.classList.remove('hidden');
+            } else {
+                imagesDiv.classList.add('hidden');
+            }
+        }
+    </script>
+    
