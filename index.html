@@ -19,8 +19,9 @@
         <ul>
           <li><a href="#" class="anchor sss">Home</a></li>
           <li><a href="#aboutus" class="anchor sss">About</a></li>
+          <li><a href="#projects" class="anchor sss">Projects</a></li>
           <li><a href="#aboutus" class="anchor sss">Gallery</a></li>
-          <li><a href="#" class="anchor sss">Projects</a></li>
+
           <li><a href="#" class="anchor sss">Proposal</a></li>
 
           <button class="btn-primary" id="joinusbtn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNkngyFkrehtMgwFuTi_-nwxx6ju3LU35CpU9Axkdo4bK0LQ/viewform" id="ss" class="anchor sss secondary">Join Us</a></button>
@@ -72,8 +73,8 @@
 
 
 <!-- about us -->
-
-  <div class="container collage" id = "aboutus">
+<div id = "aboutus" class ="aboutusbody">
+  <div class="container collage">
     <div class="grid-container">
       <div class="item item1">
         <img src="assets/aboutus.png" alt="image">
@@ -124,8 +125,53 @@
 
   </div>
 
+
+</div>
+
 <!-- PROJECTS -->
-<div class="projekt">
+<div class="projekt" id = "projects">
+
+
+
+  <!-- IMPACT -->
+<div class = "counterbody">
+  <div class="counter-container">
+    <img src="assets/countericon.png" alt="Counter Icon" class="counter-icon">
+    <span id="counter" class="counter">100</span>+
+    <span class="text">Students Impacted</span>
+  </div>
+  </div>
+  
+  <script>document.addEventListener("DOMContentLoaded", () => {
+    const counterElement = document.getElementById("counter");
+    let count = 100;
+    const target = 500;
+    const increment = (target - count) / 100;
+    
+    const updateCounter = () => {
+        count += increment;
+        if (count >= target) {
+            count = target;
+            counterElement.textContent = target;
+        } else {
+            counterElement.textContent = Math.ceil(count);
+            requestAnimationFrame(updateCounter);
+        }
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                updateCounter();
+                observer.unobserve(counterElement); // Stop observing once animation starts
+            }
+        });
+    });
+  
+    observer.observe(counterElement);
+  });
+  </script>
+  
   <div class="card center ">
     <div class="imgBx">
       <img src="assets/supremelogo.png">
@@ -137,15 +183,15 @@
         <h3>Targets</h3>
           <h4>Uplifting the computer literacy</h4>
           <h4>Teaching Basic Website</h4>
-
+          <h4>Teaching Basic Website</h4>
+          <h4>Teaching Basic Website</h4>
+          <h4>Teaching Basic Website</h4>
       </div>
 
       <a href="#">Read more</a>
     </div>
   </div>
 </div>
-
-
 
 
 
